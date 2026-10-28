@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#5c7cfa">
+  <meta name="description" content="Aventuras del Saber: juegos educativos para aprender jugando.">
+  <title>Aventuras del Saber | ¡Aprender jugando!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sky-sparkles" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Aventuras del Saber, inicio">
+      <span class="brand-star">★</span><span>Aventuras<br><b>del Saber</b></span>
+    </a>
+    <nav class="nav" aria-label="Navegación principal">
+      <a class="nav-link active" href="#inicio">🏠 Inicio</a>
+      <a class="nav-link" href="#niveles">⭐ Niveles</a>
+      <a class="nav-link" href="#juegos">🎮 Juegos</a>
+      <a class="nav-link" href="#premios">🏆 Premios</a>
+    </nav>
+    <div class="player-pill"><span>⭐</span><strong id="starCount">0</strong><span class="player-avatar" aria-hidden="true">🧒</span></div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-art" aria-hidden="true">
+        <div class="sun"></div><div class="cloud cloud-one"></div><div class="cloud cloud-two"></div>
+        <div class="floating-island"><span>🏰</span><i>🌳 🌲 🌼</i></div>
+        <div class="hero-friends"><span class="hero-kid">🧑🏻‍🚀</span><span class="hero-pet">🐶</span></div>
+      </div>
+      <div class="hero-copy">
+        <span class="eyebrow">✨ ¡Tu próxima aventura comienza aquí!</span>
+        <h1>¡Hola, explorador!</h1>
+        <p>Aprende, juega y descubre un mundo lleno de sorpresas. ¡Cada reto te ayuda a crecer!</p>
+        <button class="button button-green" id="startAdventure">▶ ¡Comenzar aventura!</button>
+        <div class="hero-note">🌈 Juega a tu ritmo · ¡Equivocarse también es aprender!</div>
+      </div>
+      <div class="signpost" aria-hidden="true"><span>APRENDE</span><span>JUEGA</span><span>EXPLORA</span></div>
+    </section>
+
+    <section class="subjects section-wrap" id="juegos" aria-labelledby="subjectsTitle">
+      <div class="section-heading"><div><span class="mini-label">ELIGE TU MISIÓN</span><h2 id="subjectsTitle">¿Qué quieres descubrir hoy?</h2></div><p>Toca una tarjeta para jugar.</p></div>
+      <div class="subject-grid">
+        <button class="subject-card pink" data-topic="letters"><span class="subject-icon">🔤</span><strong>Letras y lectura</strong><small>Palabras mágicas</small></button>
+        <button class="subject-card blue" data-topic="numbers"><span class="subject-icon">🔢</span><strong>Números</strong><small>Cuenta y calcula</small></button>
+        <button class="subject-card yellow" data-topic="shapes"><span class="subject-icon">🔺</span><strong>Formas y colores</strong><small>¡Mira a tu alrededor!</small></button>
+        <button class="subject-card green" data-topic="nature"><span class="subject-icon">🌍</span><strong>Naturaleza</strong><small>Cuida nuestro planeta</small></button>
+        <button class="subject-card purple" data-topic="animals"><span class="subject-icon">🦁</span><strong>Animales</strong><small>Conoce sus secretos</small></button>
+        <button class="subject-card orange" data-topic="emotions"><span class="subject-icon">💖</span><strong>Emociones</strong><small>Conócete mejor</small></button>
+      </div>
+    </section>
+
+    <section class="levels-panel section-wrap" id="niveles">
+      <div class="section-heading"><div><span class="mini-label">MAPA DEL MUNDO</span><h2>🗺️ Niveles de aventura</h2></div><span class="level-counter" id="levelCounter">Nivel 1 de 6</span></div>
+      <div class="level-track">
+        <button class="level-card unlocked" data-level="0"><span class="level-art">🌳🌼</span><span class="level-number">NIVEL 1</span><strong>El bosque<br>de las letras</strong><span class="level-status">¡Disponible!</span></button>
+        <button class="level-card" data-level="1"><span class="level-art">🏝️🐚</span><span class="level-number">NIVEL 2</span><strong>La isla<br>de los números</strong><span class="level-status">🔒 Bloqueado</span></button>
+        <button class="level-card" data-level="2"><span class="level-art">🔷🌈</span><span class="level-number">NIVEL 3</span><strong>El valle<br>de las formas</strong><span class="level-status">🔒 Bloqueado</span></button>
+        <button class="level-card" data-level="3"><span class="level-art">🦊🌲</span><span class="level-number">NIVEL 4</span><strong>El mundo<br>animal</strong><span class="level-status">🔒 Bloqueado</span></button>
+        <button class="level-card" data-level="4"><span class="level-art">🌦️🌻</span><span class="level-number">NIVEL 5</span><strong>La ciudad<br>de las emociones</strong><span class="level-status">🔒 Bloqueado</span></button>
+        <button class="level-card" data-level="5"><span class="level-art">🏰✨</span><span class="level-number">NIVEL 6</span><strong>El castillo<br>del saber</strong><span class="level-status">🔒 Bloqueado</span></button>
+      </div>
+      <p class="helper-text">Completa una misión para ganar estrellas y abrir nuevos caminos. ⭐</p>
+    </section>
+
+    <section class="dashboard section-wrap">
+      <article class="dashboard-card" id="premios">
+        <h2>🏆 Mis premios</h2>
+        <div class="badges" id="badges">
+          <div class="badge locked"><span>🌟</span><small>Primera estrella</small></div>
+          <div class="badge locked"><span>📚</span><small>Gran lector</small></div>
+          <div class="badge locked"><span>🧠</span><small>Mente brillante</small></div>
+          <div class="badge locked"><span>🌈</span><small>Explorador</small></div>
+        </div>
+      </article>
+      <article class="dashboard-card progress-card">
+        <h2>📊 Mi progreso</h2>
+        <div class="progress-line"><span id="progressLabel">¡Vamos a comenzar!</span><strong id="progressPercent">0%</strong></div>
+        <div class="progress-bar"><span id="progressBar"></span></div>
+        <div class="progress-foot"><span id="missionsDone">0 misiones completadas</span><span>🚀</span></div>
+      </article>
+      <article class="dashboard-card">
+        <h2>🧑‍🚀 Tus compañeros</h2>
+        <div class="friends"><span>👧🏻<small>Luna</small></span><span>🧒🏻<small>Max</small></span><span>🐶<small>Milo</small></span><span>🐱<small>Estela</small></span><span>🐢<small>Roco</small></span></div>
+      </article>
+    </section>
+  </main>
+
+  <footer><span>🌟 Aventuras del Saber</span><span>Aprender es una aventura. ¡Tú puedes!</span><button id="resetProgress" class="reset-button">Reiniciar progreso</button></footer>
+
+  <dialog id="gameDialog" class="game-dialog">
+    <div class="dialog-top"><span class="mini-label" id="gameKicker">MINIJUEGO</span><button id="closeDialog" class="close-button" aria-label="Cerrar juego">✕</button></div>
+    <div id="gameContent"></div>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
