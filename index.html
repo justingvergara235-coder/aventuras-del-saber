@@ -1,100 +1,64 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#5c7cfa">
-  <meta name="description" content="Aventuras del Saber: juegos educativos para aprender jugando.">
-  <title>Aventuras del Saber | ¡Aprender jugando!</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Portafolio reflexivo de una estudiante de Licenciatura en Educación Infantil.">
+<title>Pensamientos de una practicante de Educación Infantil</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="sky-sparkles" aria-hidden="true"></div>
-  <header class="topbar">
-    <a class="brand" href="#inicio" aria-label="Aventuras del Saber, inicio">
-      <span class="brand-star">★</span><span>Aventuras<br><b>del Saber</b></span>
-    </a>
-    <nav class="nav" aria-label="Navegación principal">
-      <a class="nav-link active" href="#inicio">🏠 Inicio</a>
-      <a class="nav-link" href="#niveles">⭐ Niveles</a>
-      <a class="nav-link" href="#juegos">🎮 Juegos</a>
-      <a class="nav-link" href="#premios">🏆 Premios</a>
-    </nav>
-    <div class="player-pill"><span>⭐</span><strong id="starCount">0</strong><span class="player-avatar" aria-hidden="true">🧒</span></div>
-  </header>
-
-  <main>
-    <section class="hero" id="inicio">
-      <div class="hero-art" aria-hidden="true">
-        <div class="sun"></div><div class="cloud cloud-one"></div><div class="cloud cloud-two"></div>
-        <div class="floating-island"><span>🏰</span><i>🌳 🌲 🌼</i></div>
-        <div class="hero-friends"><span class="hero-kid">🧑🏻‍🚀</span><span class="hero-pet">🐶</span></div>
-      </div>
-      <div class="hero-copy">
-        <span class="eyebrow">✨ ¡Tu próxima aventura comienza aquí!</span>
-        <h1>¡Hola, explorador!</h1>
-        <p>Aprende, juega y descubre un mundo lleno de sorpresas. ¡Cada reto te ayuda a crecer!</p>
-        <button class="button button-green" id="startAdventure">▶ ¡Comenzar aventura!</button>
-        <div class="hero-note">🌈 Juega a tu ritmo · ¡Equivocarse también es aprender!</div>
-      </div>
-      <div class="signpost" aria-hidden="true"><span>APRENDE</span><span>JUEGA</span><span>EXPLORA</span></div>
-    </section>
-
-    <section class="subjects section-wrap" id="juegos" aria-labelledby="subjectsTitle">
-      <div class="section-heading"><div><span class="mini-label">ELIGE TU MISIÓN</span><h2 id="subjectsTitle">¿Qué quieres descubrir hoy?</h2></div><p>Toca una tarjeta para jugar.</p></div>
-      <div class="subject-grid">
-        <button class="subject-card pink" data-topic="letters"><span class="subject-icon">🔤</span><strong>Letras y lectura</strong><small>Palabras mágicas</small></button>
-        <button class="subject-card blue" data-topic="numbers"><span class="subject-icon">🔢</span><strong>Números</strong><small>Cuenta y calcula</small></button>
-        <button class="subject-card yellow" data-topic="shapes"><span class="subject-icon">🔺</span><strong>Formas y colores</strong><small>¡Mira a tu alrededor!</small></button>
-        <button class="subject-card green" data-topic="nature"><span class="subject-icon">🌍</span><strong>Naturaleza</strong><small>Cuida nuestro planeta</small></button>
-        <button class="subject-card purple" data-topic="animals"><span class="subject-icon">🦁</span><strong>Animales</strong><small>Conoce sus secretos</small></button>
-        <button class="subject-card orange" data-topic="emotions"><span class="subject-icon">💖</span><strong>Emociones</strong><small>Conócete mejor</small></button>
-      </div>
-    </section>
-
-    <section class="levels-panel section-wrap" id="niveles">
-      <div class="section-heading"><div><span class="mini-label">MAPA DEL MUNDO</span><h2>🗺️ Niveles de aventura</h2></div><span class="level-counter" id="levelCounter">Nivel 1 de 6</span></div>
-      <div class="level-track">
-        <button class="level-card unlocked" data-level="0"><span class="level-art">🌳🌼</span><span class="level-number">NIVEL 1</span><strong>El bosque<br>de las letras</strong><span class="level-status">¡Disponible!</span></button>
-        <button class="level-card" data-level="1"><span class="level-art">🏝️🐚</span><span class="level-number">NIVEL 2</span><strong>La isla<br>de los números</strong><span class="level-status">🔒 Bloqueado</span></button>
-        <button class="level-card" data-level="2"><span class="level-art">🔷🌈</span><span class="level-number">NIVEL 3</span><strong>El valle<br>de las formas</strong><span class="level-status">🔒 Bloqueado</span></button>
-        <button class="level-card" data-level="3"><span class="level-art">🦊🌲</span><span class="level-number">NIVEL 4</span><strong>El mundo<br>animal</strong><span class="level-status">🔒 Bloqueado</span></button>
-        <button class="level-card" data-level="4"><span class="level-art">🌦️🌻</span><span class="level-number">NIVEL 5</span><strong>La ciudad<br>de las emociones</strong><span class="level-status">🔒 Bloqueado</span></button>
-        <button class="level-card" data-level="5"><span class="level-art">🏰✨</span><span class="level-number">NIVEL 6</span><strong>El castillo<br>del saber</strong><span class="level-status">🔒 Bloqueado</span></button>
-      </div>
-      <p class="helper-text">Completa una misión para ganar estrellas y abrir nuevos caminos. ⭐</p>
-    </section>
-
-    <section class="dashboard section-wrap">
-      <article class="dashboard-card" id="premios">
-        <h2>🏆 Mis premios</h2>
-        <div class="badges" id="badges">
-          <div class="badge locked"><span>🌟</span><small>Primera estrella</small></div>
-          <div class="badge locked"><span>📚</span><small>Gran lector</small></div>
-          <div class="badge locked"><span>🧠</span><small>Mente brillante</small></div>
-          <div class="badge locked"><span>🌈</span><small>Explorador</small></div>
-        </div>
-      </article>
-      <article class="dashboard-card progress-card">
-        <h2>📊 Mi progreso</h2>
-        <div class="progress-line"><span id="progressLabel">¡Vamos a comenzar!</span><strong id="progressPercent">0%</strong></div>
-        <div class="progress-bar"><span id="progressBar"></span></div>
-        <div class="progress-foot"><span id="missionsDone">0 misiones completadas</span><span>🚀</span></div>
-      </article>
-      <article class="dashboard-card">
-        <h2>🧑‍🚀 Tus compañeros</h2>
-        <div class="friends"><span>👧🏻<small>Luna</small></span><span>🧒🏻<small>Max</small></span><span>🐶<small>Milo</small></span><span>🐱<small>Estela</small></span><span>🐢<small>Roco</small></span></div>
-      </article>
-    </section>
-  </main>
-
-  <footer><span>🌟 Aventuras del Saber</span><span>Aprender es una aventura. ¡Tú puedes!</span><button id="resetProgress" class="reset-button">Reiniciar progreso</button></footer>
-
-  <dialog id="gameDialog" class="game-dialog">
-    <div class="dialog-top"><span class="mini-label" id="gameKicker">MINIJUEGO</span><button id="closeDialog" class="close-button" aria-label="Cerrar juego">✕</button></div>
-    <div id="gameContent"></div>
-  </dialog>
-  <div id="toast" class="toast" role="status" aria-live="polite"></div>
-  <script src="script.js"></script>
-</body>
-</html>
+<a class="skip" href="#inicio">Saltar al contenido</a>
+<header class="header">
+<a class="brand" href="#inicio"><span class="branch">❧</span><span>Pensamientos de una practicante<small>de Educación Infantil</small></span></a>
+<button class="menu" id="menu" aria-expanded="false" aria-label="Abrir menú">☰</button>
+<nav id="nav"><a href="#inicio" class="active">Inicio</a><a href="#palabras">Las palabras y el mundo</a><a href="#observar">Lo que observar me enseña</a><a href="#infancia">Pensar la infancia</a><a href="#mundo">Pensar el mundo</a><a href="#preguntas">Preguntas abiertas</a><a href="#voces">Las voces que me acompañan</a></nav>
+</header>
+<main>
+<section class="hero" id="inicio">
+<div class="hero-copy"><span class="kicker">PORTAFOLIO DE PRÁCTICA · EDUCACIÓN INFANTIL</span>
+<h1>Pensamientos de una practicante de <em>Educación Infantil</em></h1>
+<p class="subtitle">Lo que observar me enseña.</p>
+<p class="intro">Un espacio para compartir las experiencias, preguntas y aprendizajes que van transformando mi manera de mirar la infancia, la lectura y la escritura.</p>
+<a class="button dark" href="#recorrido">Explorar mi portafolio <span>↗</span></a>
+<p class="hand">No tengo todas las respuestas. Estoy aprendiendo a mirar. <span>♡</span></p></div>
+<div class="hero-image"><div class="tape"></div><img src="https://images.unsplash.com/photo-1605627079912-97c3810a11a4?auto=format&fit=crop&fm=jpg&q=80&w=1400" alt="Manos de un niño dibujando sobre papel en una mesa con materiales de arte"><p>Una idea también empieza con un trazo.</p><span class="star">✳</span></div>
+<div class="hero-foot"><span>Leer con curiosidad</span><i></i><span>Escribir para comprender</span><i></i><span>Observar con atención</span></div>
+</section>
+<section class="journey" id="recorrido"><div class="journey-intro"><span class="pill">UN RECORRIDO EN CONSTRUCCIÓN</span><h2>Aprender a mirar también es aprender a <u>preguntar.</u></h2><p>Este portafolio nace de las experiencias en la práctica, de las lecturas del curso y de las preguntas que todavía no sé responder. Aquí quiero pensar en voz alta, relacionar ideas y reconocer cómo cambia mi mirada mientras aprendo a ser docente.</p><p class="hand">La infancia no cabe en una sola respuesta. ✳</p></div>
+<div class="cards">
+<a class="card blue" href="#palabras"><b>01</b><span class="symbol">▤</span><h3>Las palabras y el mundo</h3><p>Lectura, escritura y prácticas sociales.</p><span class="arrow">↗</span></a>
+<a class="card peach" href="#observar"><b>02</b><span class="symbol">◎</span><h3>Lo que observar me enseña</h3><p>Experiencias y preguntas de la práctica.</p><span class="arrow">↗</span></a>
+<a class="card lilac" href="#infancia"><b>03</b><span class="symbol">✳</span><h3>Pensar la infancia</h3><p>Juego, autonomía, curiosidad y emociones.</p><span class="arrow">↗</span></a>
+<a class="card yellow" href="#mundo"><b>04</b><span class="symbol">◎</span><h3>Pensar el mundo y lo humano</h3><p>Educación, sociedad, relaciones y libertad.</p><span class="arrow">↗</span></a>
+<a class="card mint" href="#preguntas"><b>05</b><span class="symbol">?</span><h3>Preguntas que siguen abiertas</h3><p>Ideas que todavía estoy construyendo.</p><span class="arrow">↗</span></a>
+<a class="card rose" href="#voces"><b>06</b><span class="symbol">▱</span><h3>Las voces que me acompañan</h3><p>Lecturas, autoras y referencias académicas.</p><span class="arrow">↗</span></a>
+</div></section>
+<section class="quote"><span>“</span><blockquote>La infancia me invita a mirar el mundo con más atención.</blockquote><p>Una idea que acompaña este recorrido, no una conclusión definitiva.</p><b>♡</b></section>
+<section class="content" id="palabras"><span class="kicker">01 / LECTURA Y ESCRITURA</span><h2>Las palabras <em>y el mundo</em></h2><p class="lead">Leer y escribir no son solamente tareas que se aprenden en un cuaderno. También son maneras de participar, comunicar algo, interpretar el mundo y encontrar un lugar en él.</p>
+<div class="writing-layout"><aside><span>PARA PENSAR</span><p>¿Estamos invitando a los niños a expresarse o les pedimos, sobre todo, que reproduzcan una respuesta?</p><i></i></aside><article class="paper"><div class="entry-meta">ESPACIO DE REFLEXIÓN <span>Añade la fecha</span></div><h3>Cuando una marca también quiere decir algo</h3><p class="placeholder">Aquí puedes narrar una situación de clase, una actividad de lectura o escritura, o una idea de las lecturas que te haya hecho mirar de otra manera lo que hacen los niños.</p>
+<div class="prompts"><div><b>01 · Lo que vi</b><p>Describe la situación con detalles concretos.</p></div><div><b>02 · Lo que me pregunté</b><p>¿Qué idea previa se movió o quedó en duda?</p></div><div><b>03 · Lo que sigo pensando</b><p>Conecta con una lectura verificada y deja abierta una pregunta.</p></div></div><small>✎ Reemplaza estas orientaciones con tu reflexión y añade citas verificadas.</small></article></div>
+<div class="authors"><span>Virginia Zavala</span><span>Judith Kalman</span><span>Emilia Ferreiro</span><span>Elisabel Rubiano Albornoz</span></div></section>
+<section class="content soft" id="observar"><div class="split"><div><span class="kicker">02 / CUADERNO DE PRÁCTICA</span><h2>Lo que observar <em>me enseña</em></h2></div><p class="lead">A veces una escena pequeña se queda conmigo todo el día. No siempre sé por qué. Escribirla puede ayudarme a volver sobre ella con más cuidado.</p></div>
+<div class="observation"><div class="number">NOTA<br><b>01</b></div><article><span class="tag">UNA EXPERIENCIA PARA CONTAR</span><h3>Una escena que me hizo detenerme</h3><p class="placeholder">Cuenta una experiencia real de tu práctica: qué estaba ocurriendo, qué dijeron o hicieron los niños, qué observaste y qué te llamó la atención. Cuida su privacidad: no incluyas nombres ni datos que permitan identificarlos.</p><div class="reflection">Y DESPUÉS…<br><strong>¿Qué entendí en ese momento y qué comprendo ahora al volver a pensarlo?</strong></div></article><div class="stamp">mirar<br>con calma<br>♡</div></div>
+<div class="two"><article><span>ANTES DE ESCRIBIR</span><h3>La escena</h3><p>¿Qué pasó, sin interpretarlo todavía? ¿Qué escuché? ¿Qué detalles recuerdo?</p></article><article><span>AL VOLVER A MIRAR</span><h3>La pregunta</h3><p>¿Qué supuse? ¿Qué otras explicaciones podría haber? ¿Qué necesito conversar o leer?</p></article></div></section>
+<section class="content" id="infancia"><span class="kicker">03 / JUEGO, CURIOSIDAD Y AUTONOMÍA</span><h2>Pensar <em>la infancia</em></h2><p class="lead">La infancia está llena de movimiento, imaginación, contradicciones y maneras distintas de entender las cosas. Acompañarla también implica revisar las expectativas adultas.</p>
+<div class="questions">
+<article class="q lilac"><span>✳</span><p>¿Qué puede descubrir un niño cuando tiene tiempo para jugar sin que cada paso esté dirigido?</p><small>JUEGO Y CURIOSIDAD</small></article>
+<article class="q yellow"><span>↗</span><p>¿Cómo acompañar la autonomía sin confundirla con dejar a los niños solos?</p><small>ACOMPAÑAR Y CUIDAR</small></article>
+<article class="q mint"><span>♡</span><p>¿Qué hacemos cuando una necesidad infantil no coincide con el ritmo que planeamos?</p><small>ESCUCHA Y FLEXIBILIDAD</small></article>
+</div><div class="idea"><span class="pill">UNA IDEA EN CONSTRUCCIÓN</span><h3>“Dejar de educar la infancia”</h3><p>Este título puede abrir una reflexión, no cerrarla. ¿Qué quisiera decir con él? ¿Qué formas de acompañamiento quiero cuestionar y cuáles quiero cuidar? ¿Cómo evitar convertir una intuición en una respuesta absoluta?</p></div></section>
+<section class="content world" id="mundo"><span class="kicker">04 / EDUCACIÓN Y VIDA EN COMÚN</span><h2>Pensar el mundo <em>y lo humano</em></h2><p class="lead">Lo que ocurre en el aula no está separado del mundo que habitamos. Las ideas sobre la infancia también hablan de cómo nos relacionamos, qué valoramos y qué posibilidades imaginamos para los demás.</p><div class="world-prompts"><p><b>01</b> ¿Qué idea de persona hay detrás de la manera en que organizamos la escuela?</p><p><b>02</b> ¿Cómo enseñamos a convivir sin exigir que todos piensen, hablen o aprendan igual?</p><p><b>03</b> ¿Qué puede enseñarnos la mirada de los niños sobre el mundo que los adultos damos por sentado?</p></div><p class="hand right">No se trata de tener la última palabra, sino de aprender a escuchar mejor.</p></section>
+<section class="content soft" id="preguntas"><div class="split"><div><span class="kicker">05 / IDEAS SIN CIERRE</span><h2>Preguntas que siguen <em>abiertas</em></h2></div><p class="lead">No todas las preguntas necesitan resolverse en la misma página. Algunas merecen quedarse cerca para acompañar la próxima clase, lectura o experiencia.</p></div>
+<div class="accordion"><details open><summary>¿Qué significa realmente aprender a leer y escribir?</summary><p>Una pregunta para explorar desde las prácticas de los niños, los contextos donde usan la escritura y las lecturas del curso.</p></details><details><summary>¿Cómo acompañar sin imponer una única manera de aprender?</summary><p>Añade una experiencia o lectura que te ayude a pensar la tensión entre orientar, cuidar y respetar los ritmos infantiles.</p></details><details><summary>¿Qué pasa cuando el ritmo de la escuela no coincide con el de un niño?</summary><p>Registra qué observaste, qué alternativas imaginaste y qué necesitarías comprender antes de sacar conclusiones.</p></details><details><summary>¿Qué tipo de educación necesita la infancia y qué mundo queremos construir?</summary><p>Una pregunta amplia para conectar tus observaciones del aula con asuntos sociales, éticos y humanos.</p></details></div>
+<div class="save-question"><label for="newQuestion">¿Qué pregunta te llevas hoy?</label><div><input id="newQuestion" maxlength="180" placeholder="Escribe una pregunta que quieras guardar…"><button id="addQuestion" class="button dark">Guardar pregunta +</button></div><small>Las preguntas añadidas se guardan en este navegador, en este dispositivo.</small><ul id="savedQuestions"></ul></div></section>
+<section class="content" id="voces"><span class="kicker">06 / LECTURAS QUE DIALOGAN CON MI PRÁCTICA</span><h2>Las voces que <em>me acompañan</em></h2><p class="lead">Las autoras no están aquí para reemplazar mi voz, sino para ayudarme a formular preguntas más precisas, contrastar mis primeras impresiones y reconocer lo que todavía necesito aprender.</p>
+<div class="voice-grid"><article><b>A</b><h3>Virginia Zavala</h3><p>Lectura asignada y concepto que dialoga con mi experiencia.</p><small>Completar con la lectura del curso</small></article><article><b>B</b><h3>Judith Kalman</h3><p>Lectura asignada y preguntas sobre prácticas de lectura y escritura.</p><small>Completar con la lectura del curso</small></article><article><b>C</b><h3>Emilia Ferreiro</h3><p>Lectura asignada y reflexión sobre los procesos de construcción de la escritura.</p><small>Completar con la lectura del curso</small></article><article><b>D</b><h3>Elisabel Rubiano Albornoz</h3><p>Lectura asignada y relación con las situaciones observadas.</p><small>Completar con la lectura del curso</small></article></div>
+<div class="apa"><div><span class="pill">REFERENCIAS · APA 7.ª EDICIÓN</span><h3>Referencias por completar</h3><p>Incluye los datos de las lecturas originales: autoría, año, título, revista o libro, editorial y DOI o URL cuando corresponda. No añadas páginas ni citas textuales hasta comprobarlas en la fuente.</p></div><div class="apa-example"><small>PLANTILLA PARA ARTÍCULO</small><p>Apellido, A. A. (Año). Título del artículo. <em>Nombre de la revista, volumen</em>(número), xx–xx. https://doi.org/xxxxx</p><small>PLANTILLA PARA LIBRO</small><p>Apellido, A. A. (Año). <em>Título del libro</em>. Editorial.</p><small>Son formatos orientativos: reemplaza todos los campos por información verificada.</small></div></div></section>
+<section class="about"><div class="about-art"><span>“</span><b>♡</b><i>✳</i></div><div><span class="pill">SOBRE ESTE PORTAFOLIO</span><h2>Un espacio para pensar, sentir y <em>seguir aprendiendo.</em></h2><p>Este portafolio reúne mis reflexiones, preguntas y aprendizajes como estudiante de Licenciatura en Educación Infantil, en el marco de la asignatura <i>Práctica de enseñanza y aprendizaje de la lectura y la escritura</i>.</p><p>No busco mostrar una mirada terminada, sino dejar registro de cómo se va construyendo: con experiencias concretas, lecturas que me interpelan y preguntas que me ayudan a observar con más cuidado.</p><p class="hand">Una practicante, en proceso. ♡</p></div></section>
+</main>
+<footer><div><p>Observar, cuestionar y acompañar…<br><em>también es educar.</em></p><small>Pensamientos de una practicante de Educación Infantil</small></div><div><a href="#inicio">Volver al inicio ↑</a><span>Leer · Escribir · Observar · Acompañar</span></div></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body></html>

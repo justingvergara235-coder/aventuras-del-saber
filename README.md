@@ -1,31 +1,33 @@
-# Aventuras del Saber 🌈
+# Pensamientos de una practicante de Educación Infantil
 
-Web educativa interactiva para niñas y niños de 6 a 8 años. Está hecha con HTML, CSS y JavaScript puro; no necesita servidor ni herramientas de compilación.
+Portafolio personal para la asignatura **Práctica de enseñanza y aprendizaje de la lectura y la escritura**. Desarrollado con HTML, CSS y JavaScript, compatible con GitHub Pages.
 
 ## Incluye
-- Seis áreas de aprendizaje: letras, números, formas y colores, naturaleza, animales y emociones.
-- Minijuegos de preguntas con retroalimentación.
-- Estrellas, misiones completadas, niveles y premios.
-- Progreso guardado en el navegador mediante `localStorage`.
-- Diseño adaptable a computador, tableta y celular.
-- Botón para reiniciar el progreso.
+- Diseño editorial con colores pastel fríos, detalles tipo cuaderno y una sola fotografía principal.
+- Secciones para lectura y escritura, experiencias de práctica, infancia, sociedad, preguntas abiertas y lecturas.
+- Menú móvil, navegación por secciones, preguntas desplegables y opción de guardar preguntas en el navegador.
+- Orientaciones para redactar reflexiones sin inventar experiencias.
+- Plantillas de referencia APA 7.ª edición, sin referencias bibliográficas inventadas.
 
-## Probar en tu computador
-1. Descomprime la carpeta.
-2. Abre `index.html` en un navegador moderno.
+## Publicar o actualizar
+1. En el repositorio de GitHub, abre **Add file → Upload files**.
+2. Sube `index.html`, `style.css`, `script.js` y `README.md` directamente a la raíz.
+3. Pulsa **Commit changes**.
+4. En **Settings → Pages**, selecciona **Deploy from a branch**, rama `main`, carpeta `/ (root)`.
+5. Espera a que termine la publicación.
 
-## Publicar gratis con GitHub Pages
-1. Entra a GitHub y crea un repositorio público, por ejemplo `aventuras-del-saber`.
-2. Sube `index.html`, `style.css` y `script.js` a la raíz del repositorio.
-3. Abre **Settings → Pages**.
-4. En **Build and deployment**, elige **Deploy from a branch**.
-5. Selecciona la rama `main` y la carpeta `/ (root)`, luego guarda.
-6. Espera a que GitHub publique el sitio. La URL normalmente será `https://TU-USUARIO.github.io/aventuras-del-saber/`.
+## Editar
+- `index.html`: textos, preguntas y secciones.
+- `style.css`: colores, tipografías y diseño.
+- `script.js`: menú y guardado local de preguntas.
 
-## Personalización pedagógica
-Las preguntas son una base editable para un prototipo académico. Revísalas con la docente para alinearlas con los objetivos de aprendizaje, el contexto del grupo y las necesidades de accesibilidad. La página no pide nombres, correos ni otros datos personales de los niños.
+Busca textos como “ESPACIO DE REFLEXIÓN” o “Completar con la lectura del curso” para encontrar las orientaciones que debes sustituir por tus experiencias y análisis verificados.
 
-## Archivos
-- `index.html`: estructura y contenido.
-- `style.css`: estilos, animaciones y diseño adaptable.
-- `script.js`: juegos, puntajes, desbloqueos y guardado local.
+## Fotografía
+La portada utiliza una fotografía real de Unsplash: “A child drawing on orange paper at a wooden table with craft supplies”, de Compagnons (@sigmund), disponible bajo la licencia de Unsplash:
+https://unsplash.com/photos/child-drawing-on-paper-at-table-TJxotQTUr8o
+
+La imagen se carga desde el CDN de Unsplash. Para guardarla localmente, descárgala desde la página de origen y cambia el `src` de `index.html`.
+
+## Nota académica
+Los textos guía son orientaciones, no experiencias atribuidas a la estudiante. Completa el portafolio con observaciones propias y verifica las lecturas originales antes de añadir citas o referencias APA 7. Evita publicar nombres o datos que identifiquen a niños sin autorización adecuada.
